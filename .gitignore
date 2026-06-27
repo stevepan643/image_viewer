@@ -1,0 +1,9 @@
+# Jetbrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# VS code
+.vscode/
+
+build/

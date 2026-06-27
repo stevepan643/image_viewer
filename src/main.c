@@ -1,4 +1,4 @@
-#include "img.h"
+#include "imgp.h"
 #include "shader.h"
 
 #include <stdio.h>
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
 
     unsigned int w, h, ch;
     unsigned char *img;
-    img = read_image(fp, &w, &h, &ch);
+    img = imgp_load(fp, &w, &h, &ch);
     if (img == NULL) return -1;
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
